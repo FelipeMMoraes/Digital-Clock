@@ -16,6 +16,12 @@ body {
    justify-content: center;
 }
 
+.text {
+   text-align: center;
+   color: #fff;
+   margin-bottom: 80px;
+}
+
 .relogio {
    display: flex;
    align-items: center;
@@ -48,4 +54,36 @@ body {
 
 .box span.tempo {
    font-size: 10px;
+}
+
+@media (max-width: 600px) {
+
+   .text {
+      margin-bottom: 40px;
+   }
+
+   .relogio {
+      height: 150px;
+      width: 300px;
+      gap: 40px;
+      background: none;
+      box-shadow: none;
+   }
+
+   .box {
+      height: 100px;
+      width: 150px; 
+      letter-spacing: 1.5px;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .box span {
+      font-weight: bolder;
+      font-size: 30px;
+   }
+
+   .box span.tempo {
+      font-size: 10px;
+   }
 }
